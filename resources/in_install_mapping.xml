@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<beanio xmlns="http://www.beanio.org/2012/03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+
+    <stream name="install" format="csv">
+        <parser>
+            <property name="delimiter" value="," />
+        </parser>
+        <record name="detail" minOccurs="0" maxOccurs="unbounded" class="com.ouc.model.Install">
+            <field name="recordNumber"/>
+            <field name="transactionType"/>
+            <field name="utilityID"/>
+            <field name="accountNumber"/>
+            <field name="billingCycle"/>
+            <field name="servicePointID"/>
+            <field name="description"/>
+            <field name="address1"/>
+            <field name="address2"/>
+            <field name="city"/>
+            <field name="state"/>
+            <field name="zip"/>
+            <field name="rateCode"/>
+            <field name="meterBadge"/>
+            <field name="lat"/>
+            <field name="lon"/>
+            <field name="installDate" type="java.util.Date" format="yyyy-MM-dd"/>
+            <field name="tou"/>
+            <field name="ci"/>
+            <field name="meterType"/>
+            <field name="netMeter"/>
+            <field name="siteID"/>
+            <field name="multiplier"/>
+            <field name="pin"/>
+            <field name="commodity"/>
+        </record>
+    </stream>
+</beanio>
