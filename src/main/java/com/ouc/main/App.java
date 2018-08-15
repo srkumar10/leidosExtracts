@@ -7,9 +7,10 @@ public class App {
             //new CompareFiles().execute();
             //new LoadMetersToMYSQLDB().execute();
             //new LoadMetersToSQLDB().execute();
-            new LoadInstallsToSQLDB().execute();
+            //new LoadInstallsToSQLDB().execute();
             //new FindDuplicates().execute();
             //new RemoveDuplicates().execute();
+            new LoadCustomersToSQLDB().execute();
 
         } catch (Exception e) {
             e.printStackTrace();

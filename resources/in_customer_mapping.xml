@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<beanio xmlns="http://www.beanio.org/2012/03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+
+    <stream name="customers" format="csv">
+        <parser>
+            <property name="delimiter" value="," />
+        </parser>
+        <record name="detail" minOccurs="0" maxOccurs="unbounded" class="com.ouc.model.Customer">
+            <field name="accountID"/>
+            <field name="servicePointID" minOccurs="0"/>
+            <field name="meterID" minOccurs="0"/>
+            <field name="meterBadge" minOccurs="0"/>
+            <field name="meterConfigID" minOccurs="0"/>
+        </record>
+    </stream>
+</beanio>
